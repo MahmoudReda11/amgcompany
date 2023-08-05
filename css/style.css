@@ -472,6 +472,111 @@ footer .footer-copyright p{
 }
 
 
+
+
+/* start servic pepole Responsive*/
+
+section.home{
+    background: linear-gradient(#253169a1,#253169a1), url(../image/bgservpoepl.jpg);
+    text-align: center;
+    padding: 100px 0;
+    background-size: cover;
+    background-position: center;
+}
+
+section.home .content h1{
+    color: #fff;
+    font-size: 40px;
+}
+section.home .content  p{
+    width: 75%;
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 10px auto 30px;
+}
+
+
+
+
+
+
+/* services-people */
+
+.services-people .boxs{
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: auto;
+    gap: 25px;
+}
+.services-people .boxs .box{
+    width: 30%;
+    background-color: #253169;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    top: 0;
+    transition: 0.3s;
+}
+.services-people .boxs .box:hover{
+    top: -10px;
+}
+.services-people .boxs .box span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    background: transparent linear-gradient(181deg,#BBA66C 0%,#F9E489 49%,#ECD784 100%) 0% 0% no-repeat padding-box;
+}
+.services-people .boxs .box img{
+    width: 60px;
+}
+.services-people .boxs .box p{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Responsive */ 
 
 @media (max-width: 980px){
@@ -501,6 +606,13 @@ footer .footer-copyright p{
     }
     footer .container .social{
         width: 35%;
+    }
+    section.home .content  p{
+        width: 85%;
+        font-size: 18px;
+    }
+    .services-people .boxs .box{
+        width: 47%;
     }
 }
 @media (max-width: 770px){
@@ -572,6 +684,12 @@ footer .footer-copyright p{
     footer .container .coulm .coulm-links{
         width: 45%;
     }
+    .services-people .boxs .box p{
+       font-size: 16px;
+    }
+    section.home .content  p{
+        width: 95%;
+    }
 }
 
 @media (max-width: 650px){
@@ -612,6 +730,9 @@ footer .footer-copyright p{
     }
     footer .container .coulm .coulm-links{
         width: 45%;
+    }
+    .services-people .boxs .box{
+        width: 70%;
     }
 
 }
@@ -684,6 +805,15 @@ footer .footer-copyright p{
     .swiper-sec .boxs .box .sm-img img{
         width: 65px;
     }
+    .services-people .boxs .box{
+        width: 85%;
+    }
+    .services-people .boxs .box p{
+        font-size: 15px;
+    }
+    section.home .content p{
+        width: 96%;
+    }
    
 }
 @media (max-width: 350px){
@@ -713,6 +843,12 @@ footer .footer-copyright p{
     footer .footer-copyright p{
         color: #fff;
         font-size: 14px;
+    }
+    .services-people .boxs .box{
+        width: 100%;
+    }
+    section.home .content p{
+        width: 96%;
     }
 }
 

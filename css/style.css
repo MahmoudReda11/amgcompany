@@ -527,7 +527,7 @@ footer .footer-copyright p{
     .img-text .div-img{
         width: 100%;
         background: #253169;
-        padding: 50PX;
+        padding: 50PX 0;
     }
     .img-text .div-img .content{
         position: relative;

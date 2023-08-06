@@ -1,7 +1,5 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Changa:wght@300;400;500;600;700;800&family=Monomaniac+One&display=swap');
-
-
 *{
     padding: 0;
     margin: 0;
@@ -9,10 +7,98 @@
     font-family: 'Changa', sans-serif;
     text-decoration: none;
 }
+
+
+/* scroll */
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f2f2f6;
+   
+}
+::-webkit-scrollbar{
+    width: 14px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #253169;
+}
+
+
+
+
+
+
+
+
+
+
+
 body {
     direction: rtl;
 }
-
+.wts-div{
+    position: fixed;
+    right: 20px;
+    top: 80vh;
+    z-index: 1000;
+}
+.wts-div a i{
+    color: #BBA66C;
+    font-size: 58px;
+    width: 48px;
+    height: 48px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 48px;
+    font-weight: bolder;
+    animation: wts-anim 4s linear infinite;
+}
+@keyframes wts-anim{
+    0%{
+        transform: rotate(20deg);
+    }
+    7%{
+        transform: rotate(-30deg);
+    }
+    14%{
+        transform: rotate(20deg);
+    }
+    21%{
+        transform: rotate(-20deg);
+    }
+    24%{
+        transform: rotate(20deg);
+    }
+    100%{
+        transform: rotate(20deg);
+    }
+}
+.arrow-up{
+    position: fixed;
+    top: 70vh;
+    right: -50px;
+    z-index: 1000;
+}
+.arrow-up.active{
+    right: 0;
+    transition: 0.3s;
+}
+.arrow-up .btn-scroll i{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: #00000088;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
 span{
     color: #BBA66C;
 }
@@ -566,6 +652,246 @@ section.home .content  p{
 
 
 
+/* start saervice crupto */
+
+.ab-crupto-serv .div-img .content{
+    position: relative;
+}
+.ab-crupto-serv .div-img .content::after{
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 150px;
+    height: 150px;
+    background: #bba66c;
+    z-index: 1;
+}
+.ab-crupto-serv .div-img{
+    width: 45%;
+    padding: 80px 80px;
+    margin-right: 50px;
+}
+.ab-crupto-serv .div-img .content img{
+    width: 100%;
+    position: relative;
+    z-index: 100;
+}
+.ab-crupto-serv .div-img .content .btm-lft-img{
+    position: absolute;
+    width: 90%;
+    left: -30px;
+    bottom: -20px;
+    z-index: 1;
+}
+.ab-crupto-serv .container{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px 0;
+
+}
+.ab-crupto-serv .container .div-text{
+    width: 40%;
+}
+.ab-crupto-serv .container .div-text ul{
+    list-style: none;
+}
+.ab-crupto-serv .container .div-text ul li{
+    color: #253169;
+    margin-bottom: 17px;
+}
+.ab-crupto-serv .container .div-text ul li i{
+    color: #BBA66C;
+    margin-left: 5px;
+}
+
+
+
+
+
+
+/* start services page */
+
+.home.home-serv{
+    padding: 150px 0;
+    background: linear-gradient(#253169a1,#253169a1), url(../image/bg-services.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.home.home-serv h1{
+    margin-bottom: 40px;
+}
+.contact-sec-sm{
+    padding: 100px 0;
+    background:  linear-gradient(#253169a1,#253169a1),url(../image/bgservpoepl.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+.contact-sec-sm .container{
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    border-bottom: 10px solid #BBA66C;
+}
+.contact-sec-sm .container .top-sec{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.contact-sec-sm .top-sec .logo{
+    width: 25%;
+
+}
+.contact-sec-sm .top-sec .logo h1{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 40px;
+}
+.contact-sec-sm .top-sec p{
+    width: 40%;
+    color: #fff;
+    font-size: 18px;
+}
+.contact-sec-sm .top-sec .div-btn{
+    width: 25%;
+}
+.contact-sec-sm .btm-sec{
+    display: flex;
+    justify-content: space-between;;
+    padding: 40px 10px;
+    background-color: #253169;
+}
+.contact-sec-sm .btm-sec .colum{
+    width: 28%;
+    text-align: center;
+}
+.contact-sec-sm .btm-sec .colum h5{
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.contact-sec-sm .btm-sec .colum .links{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+.contact-sec-sm .btm-sec div a{
+    font-size: 18px;
+    color: #BBA66C;
+}
+
+
+/* start service company */ 
+
+.home.home-serv-comp{
+    padding: 100px 0;
+    background: linear-gradient(#253169a1,#253169a1), url(../image/bg-serv-comp.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.cont-top{
+    text-align: center;
+    padding: 40px 100px 0;
+}
+.cont-top h2{
+    color: #253169;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.cont-top p{
+    color: #111630;
+    font-size: 18px;
+    line-height: 2.2;
+}
+.ab-crupto-serv .container .div-text ul.ul-mg-b li{
+    color: #111630;
+    margin-bottom: 8px;
+}
+
+.serv-ask {
+    background-color: #f2f2f6;
+    padding-bottom: 50px;
+}
+.serv-ask .boxs{
+    width: 85%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px;
+    background-color: #fff;
+    box-shadow: 0px 12px 18px -21px rgba(0,0,0,0.3);
+
+}
+.serv-ask .boxs .coulm{
+    width: 30%;
+}
+.serv-ask .boxs .bord-left{
+    border-left: 1px solid #3c3e4746;
+}
+.serv-ask .boxs .box{
+    margin-bottom: 15px;
+    position: relative;
+    padding: 0px 18px;
+}
+.serv-ask .boxs .box span{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 8px;
+    height: 8px;
+    background-color: #BBA66C;
+}
+.serv-ask .boxs .box p{
+    color: #111630;
+}
+
+
+.sec-with-bg{
+    
+padding: 20px 0 80px 0;
+background: linear-gradient(#253169a1,#253169a1), url(../image/sec-with-bg.jpg);
+background-size: cover;
+background-position: center;
+}
+.sec-with-bg .cont-top h2{
+    color: #fff;
+}
+.sec-with-bg .cont-top p{
+    color: #f2f2f6;
+}
+.sec-with-bg .container .boxs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 85%;
+    margin: 50px auto 0;
+    text-align: center;
+}
+.sec-with-bg .container .boxs .box{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.sec-with-bg .container .boxs .box img{
+    width: 120px;
+}
+.sec-with-bg .container .boxs .box p{
+    color: #fff;
+    font-size: 18px;
+}
+
 
 
 
@@ -613,6 +939,54 @@ section.home .content  p{
     }
     .services-people .boxs .box{
         width: 47%;
+    }
+    .ab-crupto-serv .container{
+        flex-direction: column-reverse;
+    }
+    .ab-crupto-serv .container .div-text{
+        width: 80%;
+        padding-top: 50px;
+    }
+    .ab-crupto-serv .div-img{
+        width: 75%;
+        padding: 50px 80px;
+        margin-right: 0;
+    }
+    .contact-sec-sm .top-sec .logo{
+        width: 85%;
+    
+    }
+    .contact-sec-sm .top-sec .logo h1{
+        font-size: 35px;
+    }
+
+    .contact-sec-sm .top-sec .div-btn{
+        width: 85%;
+    }
+    .contact-sec-sm .container .top-sec{
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 50px;
+    }
+    .contact-sec-sm .top-sec p{
+        width: 85%;
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+
+
+    .serv-ask .boxs .coulm{
+        width: 100%;
+    }
+    .serv-ask .boxs .bord-left{
+        border-left: 1px solid #3c3e4746;
+    }
+    .serv-ask .boxs .bord-left{
+        border-left: none;
+    }
+
+    .sec-with-bg .container .boxs .box{
+        width: 45%;
     }
 }
 @media (max-width: 770px){
@@ -690,6 +1064,33 @@ section.home .content  p{
     section.home .content  p{
         width: 95%;
     }
+    .contact-sec-sm .btm-sec{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .contact-sec-sm .btm-sec .colum{
+        width: 40%;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    .cont-top{
+        padding: 40px 40px 0;
+    }
+    .cont-top h2{
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .cont-top p{
+        line-height: 1.7;
+    }
+    .ab-crupto-serv .container .div-text ul.ul-mg-b li{
+        color: #111630;
+        margin-bottom: 6px;
+    }
+
+   
 }
 
 @media (max-width: 650px){
@@ -734,7 +1135,25 @@ section.home .content  p{
     .services-people .boxs .box{
         width: 70%;
     }
-
+    .ab-crupto-serv .container .div-text{
+        width: 80%;
+        padding-top: 50px;
+    }
+    .ab-crupto-serv .div-img{
+        width: 90%;
+    }
+    section.home .content h1{
+        font-size: 30px;
+    }
+    section.home .content p{
+        font-size: 15px;
+    }
+    section.home{
+        padding: 60px 0;
+    }
+    .sec-with-bg .container .boxs .box{
+        width: 80%;
+    }
 }
 @media (max-width: 480px){
     .home-sec .content h1 {
@@ -811,10 +1230,51 @@ section.home .content  p{
     .services-people .boxs .box p{
         font-size: 15px;
     }
-    section.home .content p{
-        width: 96%;
+    section.home .content h1{
+        font-size: 30px;
     }
-   
+    section.home .content p{
+        width: 95%;
+    }
+    .ab-crupto-serv .container .div-text{
+        width: 80%;
+        padding-top: 50px;
+    }
+    .ab-crupto-serv .div-img{
+        width: 100%;
+        padding: 80px 40px;
+    }
+    section.home{
+        padding: 50px 0;
+    }
+    .contact-sec-sm .btm-sec .colum{
+        width: 80%;
+    }
+
+    .cont-top h2{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .cont-top p{
+        line-height: 1.7;
+        font-size: 15px;
+    }
+    .ab-crupto-serv .container .div-text ul.ul-mg-b li{
+        color: #111630;
+        margin-bottom: 6px;
+    }
+    .serv-ask .boxs .box{
+        margin-bottom: 10px;
+    }
+    .serv-ask .boxs .box p{
+        font-size: 15px;
+    }
+    .sec-with-bg .container .boxs .box{
+        width: 100%;
+    }
+    .sec-with-bg .container .boxs .box img{
+        width: 100px;
+    }
 }
 @media (max-width: 350px){
     .img-text .div-img .content::after{

@@ -1,3 +1,24 @@
+let arrowUp = document.querySelector('.arrow-up');
+
+window.onscroll = function (){
+
+  console.log(this.scrollY);
+  if (this.scrollY >= 700){
+    arrowUp.classList.add("active");
+  }else{
+    arrowUp.classList.remove("active");
+  }
+
+}
+
+arrowUp.onclick = function (){
+window.scrollTo({
+  top : 0,
+  behavior : "smooth",
+})
+}
+
+
 // swiper js 
 
 var swiper = new Swiper(".mySwiper", {
@@ -49,3 +70,8 @@ slidesPerView : 3,
   }
   setInterval(changeBg, 3000);
   
+
+  // btn scroll
+
+
+
